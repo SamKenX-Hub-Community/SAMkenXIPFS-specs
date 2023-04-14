@@ -6,7 +6,7 @@ title: Home
 
 <header>
   <div>
-    <img src="/img/ipfs-standards.svg" alt="Interplanetary Standards Logo" width="60" height="60" class="logo">
+    <img src="/img/ipfs-standards.svg" alt="InterPlanetary Standards Logo" width="60" height="60" class="logo">
     <h1>IPFS Standards</h1>
     <p>
       The purpose of <em>IPFS Standards</em> is to foster interoperability between independent implementations of
@@ -16,7 +16,7 @@ title: Home
 </header>
 
 <main>
-  <h2 class="pitch-title">Specifying IPFS and the Interplanetary stack.</h2>
+  <h2 class="pitch-title">Specifying IPFS and the InterPlanetary stack.</h2>
   <p class="pitch-subtitle">
     The technology that powers the content-addressable web is being standardized here.
   </p>
@@ -63,6 +63,23 @@ title: Home
     </p>
     <div class="basic-grid">
       <section>
+        <h3><a href="/architecture/">Architecture</a></h3>
+        <p>
+          These documents define the architectural principles that IPFS is built upon, and can be used as tools to evaluate
+          implementations and applications of IPFS.
+        </p>
+        {% include 'specs/architecture.html' %}
+      </section>
+      <section>
+        <h3><a href="/meta/">Meta</a></h3>
+        <p>
+          <em>Meta</em> contains all the non-technical documents that conspire to make the standards
+          project work: what the core values are, what the governance model is, how to produce documents,
+          etc.
+        </p>
+        {% include 'specs/meta.html' %}
+      </section>
+      <section>
         <h3><a href="/http-gateways/">HTTP Gateways</a></h3>
         <p>
           IPFS Gateway acts as a bridge between traditional HTTP clients and IPFS. Through the gateway, users can download files,
@@ -77,30 +94,6 @@ title: Home
           The InterPlanetary Naming System (IPNS) is a naming system responsible for creating, reading and updating mutable pointers to data.
         </p>
         {% include 'specs/ipns.html' %}
-      </section>
-      <section>
-        <h3><a href="/architecture/">Architecture</a></h3>
-        <p>
-          These documents define the architectural principles that IPFS is built upon, and can be used as tools to evaluate
-          implementations and applications of IPFS.
-        </p>
-        <dl>
-          <dt><a href="/architecture/principles/">IPFS Principles</a></dt>
-          <dd>
-            IPFS is a suite of specifications and tools that are defined by two key characteristics: content-addressing and
-            transport-agnosticity. This document provides context and details about these characteristics. In doing so it defines what
-            is or is not an IPFS implementation.
-          </dd>
-        </dl>
-      </section>
-      <section>
-        <h3><a href="/meta/">Meta</a></h3>
-        <p>
-          <em>Meta</em> contains all the non-technical documents that conspire to make the standards
-          project work: what the core values are, what the governance model is, how to produce documents,
-          etc.
-        </p>
-        {% include 'specs/meta.html' %}
       </section>
     </div>
   </section>
