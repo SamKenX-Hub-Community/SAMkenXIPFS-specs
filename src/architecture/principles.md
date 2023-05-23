@@ -1,4 +1,11 @@
 ---
+title: IPFS Principles
+description: >
+  IPFS is a suite of specifications and tools that are defined by two key characteristics: content-addressing and
+  transport-agnosticity. This document provides context and details about these characteristics. In doing so it defines what
+  is or is not an IPFS implementation.
+date: 2023-03-28
+maturity: reliable
 editors:
   - name: Robin Berjon
     email: robin@berjon.com
@@ -9,11 +16,9 @@ editors:
     affiliation:
         name: Protocol Labs
         url: https://protocol.ai/
-maturity: reliable
-date: 2023-03-28
+tags: ['architecture']
+order: 0
 ---
-
-# IPFS Principles
 
 The IPFS stack is a suite of specifications and tools that share two key characteristics:
 
@@ -65,7 +70,7 @@ over arbitrary transports using a CID*. As Juan Benet once put it,
 Conversely, any system that exposes interactions with resources based on CIDs is
 an IPFS implementation. There are
 [many contexts in which CIDs can be used for addressing](https://docs.ipfs.tech/how-to/address-ipfs-on-web/)
-and [content routing delegation](https://github.com/ipfs/specs/blob/main/routing/ROUTING_V1_HTTP.md)
+and content routing delegation (:cite[http-routing-v1])
 can support a wealth of interaction options by resolving CIDs.
 
 ## Robustness
